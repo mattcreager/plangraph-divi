@@ -1,3 +1,3 @@
-import HelloWorld from './HelloWorld/HelloWorld';
+import PlanGraph from './PlanGraph/PlanGraph';
 
-export default [HelloWorld];
+export default [PlanGraph];

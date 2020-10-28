@@ -1,0 +1,49 @@
+/*
+Styles used throughout the entire component
+
+https://docs.plangraph.io/embeds/plan-table#css-variables-used-by-plan-table
+*/
+:root {
+  --plangraph-color-brand: #5c6ac4;
+  --plangraph-radius: 4px;
+}
+
+/*
+Customizations of specific parts
+
+https://docs.plangraph.io/embeds/plan-table#shadow-parts-available-in-plan-table
+*/
+plangraph-plan-table::part(footer-cell) {
+  background: #ebecee;
+}
+plangraph-plan-table::part(value-cell) {
+  border-left: 0;
+}
+plangraph-plan-table::part(feature-header-cell) {
+  border: 0;
+  border-radius: 0;
+}
+plangraph-plan-table::part(header-cell plan--essential) {
+  border-left: var(--plangraph-border);
+  border-top-left-radius: var(--plangraph-radius);
+}
+plangraph-plan-table::part(footer-cell plan--essential) {
+  border-left: var(--plangraph-border);
+  border-bottom-left-radius: var(--plangraph-radius);
+}
+plangraph-plan-table::part(feature-cell) {
+  border-left: 0;
+  border-right: 0;
+}
+plangraph-plan-table::part(footer-cell feature-cell) {
+  border-left: 0;
+  border-bottom: 0;
+  border-radius: 0;
+  background: #fff;
+  border-right: 0;
+}
+@media screen and (min-width: 583px) {
+  plangraph-plan-table::part(value-cell) {
+    border-left: var(--plangraph-border);
+  }
+}
