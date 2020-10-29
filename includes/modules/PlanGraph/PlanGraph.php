@@ -9,7 +9,7 @@ function hook_javascript() {
 
 add_action('wp_head', 'hook_javascript');
 
-class PLDI_HelloWorld extends ET_Builder_Module {
+class PLDI_PlanGraph extends ET_Builder_Module {
 
 	public $slug       = 'pldi_hello_world';
 	public $vb_support = 'on';
@@ -43,4 +43,4 @@ class PLDI_HelloWorld extends ET_Builder_Module {
 	}
 }
 
-new PLDI_HelloWorld;
+new PLDI_PlanGraph;

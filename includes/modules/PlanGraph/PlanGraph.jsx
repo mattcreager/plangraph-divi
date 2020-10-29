@@ -2,12 +2,11 @@
 import React, { Component } from 'react';
 import './style.css';
 
-class HelloWorld extends Component {
+class PlanGraph extends Component {
 
   static slug = 'pldi_hello_world';
 
   componentDidMount() {
-    console.log('NO REALLY MOUNING HERE!')
     const esmScript = document.createElement("script");
 
     esmScript.src = "https://unpkg.com/@manifoldco/web-components@latest/dist/manifold/manifold.esm.js";
@@ -25,9 +24,9 @@ class HelloWorld extends Component {
   }
 
   render() {
-    return <div dangerouslySetInnerHTML={{ __html: `<plangraph-plan-table embed="emb-5gn6rtutazqvjpqc"></plangraph-plan-table>` }} />;
+    return <plangraph-plan-table embed="emb-5gn6rtutazqvjpqc"></plangraph-plan-table>
   }
 }
 
 
-export default HelloWorld;
+export default PlanGraph;
