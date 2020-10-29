@@ -1,5 +1,6 @@
 <?php
 
+// Add script tags for the two PlanGraph packages
 function hook_javascript() {
 	?>
 		<script async type="module" src="https://unpkg.com/@manifoldco/web-components@latest/dist/manifold/manifold.esm.js"></script>
@@ -37,6 +38,7 @@ class PLDI_PlanGraph extends ET_Builder_Module {
 		);
 	}
 
+  	// Render the table
 	public function render( $attrs, $content = null, $render_slug ) {
 
 		return sprintf( '<plangraph-plan-table embed="emb-5gn6rtutazqvjpqc"></plangraph-plan-table>', $this->props['content'] );

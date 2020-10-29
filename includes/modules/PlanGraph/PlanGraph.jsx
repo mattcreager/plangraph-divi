@@ -6,6 +6,7 @@ class PlanGraph extends Component {
 
   static slug = 'pldi_hello_world';
 
+  // Add script tags for the two PlanGraph packages
   componentDidMount() {
     const esmScript = document.createElement("script");
 
@@ -23,6 +24,7 @@ class PlanGraph extends Component {
     document.body.appendChild(componentScript);
   }
 
+  // Render the table in the Divi editor
   render() {
     return <plangraph-plan-table embed="emb-5gn6rtutazqvjpqc"></plangraph-plan-table>
   }
